@@ -82,15 +82,6 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     libgptutils \
     libz
 
-# Statically linked toybox for modprobe in recovery mode
-PRODUCT_PACKAGES += \
-    toybox_static
-
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    charger
-
 # Define time zone data path
 ifneq ($(wildcard bionic/libc/zoneinfo),)
     TZDATAPATH := bionic/libc/zoneinfo
